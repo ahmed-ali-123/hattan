@@ -19,17 +19,17 @@ export default function Home() {
 
   const testimonials = [
     {
-      text: "After researching dozens of publishing services, I chose Hattan because they actually took the time to understand my book. Three years and two successful publications later, I couldn't imagine working with anyone else.",
+      text: "Hattan took time to understand my vision. Three successful publications later, I couldn't work with anyone else!",
       name: "Margaret T.",
       role: "Memoir Author",
     },
     {
-      text: "I was skeptical about working with any publisher I found online, but Hattan's patient approach and willingness to answer all my questions won me over. The quality of their work exceeded my expectations, and my novel has now sold over 5,000 copies.",
+      text: "From skeptical to sold! My novel hit 5,000+ copies thanks to Hattan's exceptional quality.",
       name: "Robert J.",
       role: "Fiction Writer",
     },
     {
-      text: "As a first-time author in my 60s, I worried the publishing world had passed me by. Hattan not only helped me navigate the digital publishing landscape but made me feel valued and respected throughout the process and made it look so easy.",
+      text: "At 60, I thought publishing was beyond me. Hattan made it feel easy and kept me valued every step!",
       name: "William S.",
       role: "Non-Fiction Author",
     },
@@ -66,13 +66,17 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      <header className="bg-white border-b border-gray-100 relative z-50 shadow-sm">
+      <header className="bg-white/80 backdrop-blur-lg border-b border-gray-100 relative z-50 shadow-lg">
         <nav className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-gray-900">
-                Hattan Publishers
-              </h1>
+              <Image
+                src="/logo.png"
+                alt="Hattan Publishers Logo"
+                width={80}
+                height={80}
+                className="rounded-lg"
+              />
             </div>
             <div className="hidden md:flex space-x-8">
               <a
@@ -186,7 +190,7 @@ export default function Home() {
         {/* Hero Section with Video Background */}
         <section
           id="home"
-          className="relative py-27 lg:py-32 flex items-center justify-center overflow-hidden bg-gray-900"
+          className="relative py-32 lg:py-40 flex items-center justify-center overflow-hidden bg-gray-900"
         >
           <video
             autoPlay
@@ -216,97 +220,126 @@ export default function Home() {
 
           {/* Content */}
           <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-5">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-4 leading-tight text-white">
               Your Story Deserves to be Told
             </h1>
-            <p className="text-base md:text-lg lg:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Professional publishing services with an author-first approach.
-              Transform your manuscript into a bestseller with comprehensive
-              support.
+            <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+              Transform your ideas into bestsellers with our expert team
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 text-white px-6 py-3 text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors cursor-pointer">
-                Get Started Today
+              <button className="bg-blue-600 text-white px-6 py-3 text-base font-medium rounded-lg hover:bg-blue-700 transition-colors cursor-pointer">
+                Start Your Journey
               </button>
-              <button className="border-2 border-white text-white px-6 py-3 text-sm font-medium rounded-lg hover:bg-white hover:text-gray-900 transition-colors cursor-pointer">
-                Learn More
+              <button className="border-2 border-white text-white px-6 py-3 text-base font-medium rounded-lg hover:bg-white hover:text-gray-900 transition-colors cursor-pointer">
+                Explore Services
               </button>
             </div>
           </div>
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-16 bg-white">
+        <section id="about" className="py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center md:text-center mb-7">
-              <h2 className="text-3xl font-bold text-gray-900 mb-1 text-left md:text-center">
-                Helping Authors Share Their Stories
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-gray-900 mb-3">
+                Your Publishing Partner
               </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                We turn dreams into published reality
+              </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-10 items-start">
               <div>
-                <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-                  At Hattan Publishers, we believe every story deserves to be
-                  heard and published with care. Whether you're a first-time
-                  author or a seasoned writer, we're here to guide you through
-                  every step of the journey from manuscript to market.
-                </p>
-                <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-                  We are not a large corporate machine. We are a passionate
-                  author-first publishing team dedicated to crafting meaningful
-                  partnerships and helping you retain creative control. Founded
-                  by writers who have experienced the challenges of publishing
-                  firsthand, we built Hattan Publishers to make the process
-                  approachable, transparent, and deeply rewarding.
-                </p>
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  With decades of experience in writing, editing, design,
-                  marketing, and distribution under one roof, our team brings
-                  personalized publishing expertise to help you turn your vision
-                  into a professionally produced book readers can't put down.
-                </p>
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div
+                      style={{ marginTop: "-1px" }}
+                      className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0"
+                    >
+                      <span className="text-white font-bold text-sm">✓</span>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                        Every Story Matters
+                      </h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        From first-time authors to seasoned writers, we guide
+                        you from manuscript to bestseller.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div
+                      style={{ marginTop: "-1px" }}
+                      className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0"
+                    >
+                      <span className="text-white font-bold text-sm">✓</span>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                        Author-First Approach
+                      </h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        Founded by writers, for writers. We keep the process
+                        transparent and rewarding.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div
+                      style={{ marginTop: "-1px" }}
+                      className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0"
+                    >
+                      <span className="text-white font-bold text-sm">✓</span>
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                        Expert Team
+                      </h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        Decades of experience in writing, editing, design, and
+                        marketing under one roof.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Why Choose Hattan Publishers
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Why Choose Us?
                 </h3>
 
                 <div className="space-y-4">
                   <div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-1">
-                      Real Partnership, Real Results
+                    <h4 className="text-lg font-bold text-gray-900 mb-2">
+                      Real Partnership
                     </h4>
-                    <p className="text-sm text-gray-700">
-                      Unlike vanity presses that take your money and deliver
-                      cookie-cutter results, or traditional publishers who may
-                      not give you the time of day, we form genuine partnerships
-                      with our authors. Your success is our success.
+                    <p className="text-gray-700 leading-relaxed">
+                      Genuine partnerships, not cookie-cutter results. Your
+                      success is our success.
                     </p>
                   </div>
 
                   <div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-1">
-                      Transparent Process & Pricing
+                    <h4 className="text-lg font-bold text-gray-900 mb-2">
+                      Crystal Clear Pricing
                     </h4>
-                    <p className="text-sm text-gray-700">
-                      We believe in complete transparency. Before you commit,
-                      you'll know exactly what services you're receiving, what
-                      they cost, and what results you can expect. No hidden
-                      fees, no surprise charges.
+                    <p className="text-gray-700 leading-relaxed">
+                      Complete transparency. No hidden fees, no surprises.
                     </p>
                   </div>
 
                   <div>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-1">
-                      Your Work, Your Rights
+                    <h4 className="text-lg font-bold text-gray-900 mb-2">
+                      You Own Everything
                     </h4>
-                    <p className="text-sm text-gray-700">
-                      You maintain complete ownership of your work. Unlike
-                      traditional publishing contracts that may claim rights to
-                      your intellectual property, our model ensures you retain
-                      full creative control and copyright ownership.
+                    <p className="text-gray-700 leading-relaxed">
+                      Full creative control and copyright ownership stays with
+                      you.
                     </p>
                   </div>
                 </div>
@@ -316,23 +349,27 @@ export default function Home() {
         </section>
 
         {/* Portfolio Section */}
-        <section id="portfolio" className="py-16 bg-gray-50">
+        <section id="portfolio" className="py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-3">
-                Books We've Helped Publish
+                Success Stories
               </h2>
+              <p className="text-xl text-gray-600">
+                Books that found their readers through our partnership
+              </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
               {[...Array(6)].map((_, i) => (
                 <div
                   key={i}
-                  className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                  className=" p-0 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition-shadow cursor-pointer"
                 >
-                  <div className="aspect-[3/4] bg-gradient-to-br from-blue-100 to-indigo-200 rounded flex items-center justify-center">
+                  <div className="aspect-[3/4] bg-gradient-to-br from-blue-200 via-purple-200 to-pink-200 rounded-xl flex items-center justify-center relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20"></div>
                     <svg
-                      className="w-10 h-10 text-blue-600"
+                      className="w-12 h-12 text-blue-600 relative z-10"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -344,6 +381,9 @@ export default function Home() {
                         d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                       />
                     </svg>
+                    <div className="absolute bottom-2 right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                      <span className="text-white text-xs font-bold">✓</span>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -352,16 +392,20 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="py-16">
+        <section id="services" className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-3">
-                What We Do
+                Our Services
               </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Everything you need to transform your manuscript into a
+                bestseller
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow cursor-pointer">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-blue-600"
@@ -378,17 +422,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Ghostwriting & Editing
+                  Writing & Editing
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Professional ghostwriting and comprehensive editing services
-                  to transform your ideas into compelling manuscripts. From
-                  developmental editing to final proofreading, we ensure your
-                  story shines.
+                  Transform ideas into compelling stories with expert editing
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow cursor-pointer">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-blue-600"
@@ -405,16 +446,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Custom Book Cover Design
+                  Cover Design
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Strategic cover designs that capture your vision and appeal to
-                  readers. Multiple concepts, unlimited revisions, and formats
-                  optimized for all platforms.
+                  Eye-catching designs that make readers stop and buy
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow cursor-pointer">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-blue-600"
@@ -431,16 +470,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Children's Book Illustration
+                  Illustrations
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Engaging, age-appropriate illustrations for children's books.
-                  From character development to full-color artwork, bringing
-                  stories to life for young readers.
+                  Magical artwork that brings children's stories to life
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow cursor-pointer">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-blue-600"
@@ -457,16 +494,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Professional Publishing
+                  Publishing
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Complete publishing services including formatting, ISBN
-                  registration, and copyright filing. Transform your manuscript
-                  into a market-ready book.
+                  Complete publishing services from manuscript to market
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow cursor-pointer">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-blue-600"
@@ -483,16 +518,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Wide Distribution
+                  Distribution
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Global distribution across Amazon, Barnes & Noble, Apple
-                  Books, and more. Print-on-demand capability without inventory
-                  management.
+                  Global reach across Amazon, Apple Books & more
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow cursor-pointer">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-blue-600"
@@ -515,16 +548,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Strategic Book Marketing
+                  Marketing
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Targeted marketing strategies including social media
-                  campaigns, author websites, and book trailers. Customized
-                  promotion plans that match your goals and budget.
+                  Strategic campaigns to get your book discovered
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow cursor-pointer md:col-span-2">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow cursor-pointer">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <svg
                     className="w-6 h-6 text-blue-600"
@@ -541,19 +572,12 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Complete Launch Support
+                  Launch Support
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  When your book is ready to meet the world, we're by your side.
-                  Our launch packages include coordinated release timing,
-                  promotional events, press releases, and the critical early
-                  steps that give your book momentum in the marketplace. We
-                  provide detailed launch timelines, marketing calendars, and
-                  strategic guidance to maximize your book's impact during this
-                  crucial period. Our relationship doesn't end when your book is
-                  published. We provide continued guidance on marketing, future
-                  editions, sequel planning, and additional publishing
-                  opportunities.
+                  We're with you from launch day to bestseller status.
+                  Coordinated releases, promotional events, and ongoing
+                  partnership for your publishing success.
                 </p>
               </div>
             </div>
@@ -561,12 +585,15 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="py-16 bg-gray-50">
+        <section id="testimonials" className="py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-3">
-                Hear From Our Authors
+                Author Success Stories
               </h2>
+              <p className="text-xl text-gray-600">
+                Real testimonials from published authors
+              </p>
             </div>
 
             {/* Testimonial Cards */}
@@ -574,7 +601,7 @@ export default function Home() {
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                  className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
                 >
                   <div className="flex text-yellow-400 mb-4">
                     {[...Array(5)].map((_, i) => (
@@ -604,40 +631,38 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-white">
+        <section className="py-20 bg-blue-600">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5">
-              From First Draft to Bestseller—We're With You Every Chapter.
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Ready to Become a Published Author?
             </h2>
-            <p className="text-sm text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6">
-              More than just publishing support, we offer a creative partnership
-              that helps writers unlock their full potential. Whether you're
-              starting from a spark of inspiration or a work-in-progress, we
-              guide you through every chapter of your journey — from concept to
-              finished book. Join a thriving community of authors who've turned
-              their ideas into impactful, bestselling stories. Your path to
-              becoming a published author starts here.
+            <p className="text-xl text-white/90 max-w-2xl mx-auto leading-relaxed mb-8">
+              Join thousands of successful authors who chose Hattan as their
+              publishing partner
             </p>
-            <button className="bg-blue-600 text-white px-6 py-3 text-sm font-semibold rounded-lg hover:bg-blue-700 transition-colors cursor-pointer">
-              Get a Free Quote
+            <button className="bg-white text-blue-600 px-8 py-3 text-base font-medium rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+              Start Your Journey Today
             </button>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-20 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3">
-                Want to know more about Hattan Publishers?
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-3">
+                Frequently Asked Questions
               </h2>
+              <p className="text-xl text-gray-600">
+                We've got answers to help you get started
+              </p>
             </div>
 
             <div className="space-y-4">
               {faqData.map((faq, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                  className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200"
                 >
                   <button
                     className="w-full text-left font-semibold text-gray-900 text-sm p-4 flex justify-between items-center cursor-pointer"
@@ -674,23 +699,18 @@ export default function Home() {
         </section>
 
         {/* Contact Form Section */}
-        <section id="contact" className="py-16 bg-blue-600">
+        <section id="contact" className="py-20 bg-blue-600">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div className="text-white">
                 <h2 className="text-4xl font-bold mb-4">
                   Ready To Begin Your Publishing Journey
                 </h2>
-                <p className="text-sm opacity-90 mb-6 leading-relaxed">
-                  Your story matters, and bringing it to readers shouldn't be an
-                  intimidating process. Whether you have a completed manuscript
-                  ready for publication or just an idea you're nurturing, we're
-                  here to help. Take the first step today.
+                <p className="text-lg opacity-90 mb-6 leading-relaxed">
+                  Your publishing journey starts with one conversation
                 </p>
-                <p className="text-sm opacity-80 mb-6">
-                  Call us at (646) 443-6234 for a no-obligation consultation, or
-                  fill out our contact form. Let's discuss your vision and how
-                  Hattan Publishers can help bring it to life.
+                <p className="text-lg opacity-90 mb-6">
+                  Call (646) 443-6234 or fill out our form below
                 </p>
 
                 <div className="space-y-3">
@@ -729,8 +749,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">
                   Contact Us
                 </h3>
                 <form className="space-y-4">
@@ -775,7 +795,7 @@ export default function Home() {
                       Privacy Policy for more details.
                     </p>
                   </div>
-                  <button className="w-full bg-blue-600 text-white py-2 text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors cursor-pointer">
+                  <button className="w-full bg-blue-600 text-white py-3 text-base font-medium rounded-lg hover:bg-blue-700 transition-colors cursor-pointer">
                     Contact Us
                   </button>
                 </form>
