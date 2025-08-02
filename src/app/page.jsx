@@ -21,18 +21,18 @@ export default function Home() {
     {
       text: "After researching dozens of publishing services, I chose Hattan because they actually took the time to understand my book. Three years and two successful publications later, I couldn't imagine working with anyone else.",
       name: "Margaret T.",
-      role: "Memoir Author"
+      role: "Memoir Author",
     },
     {
       text: "I was skeptical about working with any publisher I found online, but Hattan's patient approach and willingness to answer all my questions won me over. The quality of their work exceeded my expectations, and my novel has now sold over 5,000 copies.",
       name: "Robert J.",
-      role: "Fiction Writer"
+      role: "Fiction Writer",
     },
     {
       text: "As a first-time author in my 60s, I worried the publishing world had passed me by. Hattan not only helped me navigate the digital publishing landscape but made me feel valued and respected throughout the process and made it look so easy.",
       name: "William S.",
-      role: "Non-Fiction Author"
-    }
+      role: "Non-Fiction Author",
+    },
   ];
 
   const faqData = [
@@ -186,7 +186,7 @@ export default function Home() {
         {/* Hero Section with Video Background */}
         <section
           id="home"
-          className="relative h-screen flex items-center justify-center overflow-hidden bg-gray-900"
+          className="relative py-27 lg:py-32 flex items-center justify-center overflow-hidden bg-gray-900"
         >
           <video
             autoPlay
@@ -215,11 +215,11 @@ export default function Home() {
           ></div>
 
           {/* Content */}
-          <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
+          <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-5">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
               Your Story Deserves to be Told
             </h1>
-            <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg lg:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
               Professional publishing services with an author-first approach.
               Transform your manuscript into a bestseller with comprehensive
               support.
@@ -238,8 +238,8 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-3">
+            <div className="text-center md:text-center mb-7">
+              <h2 className="text-3xl font-bold text-gray-900 mb-1 text-left md:text-center">
                 Helping Authors Share Their Stories
               </h2>
             </div>
@@ -381,7 +381,10 @@ export default function Home() {
                   Ghostwriting & Editing
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Professional ghostwriting and comprehensive editing services to transform your ideas into compelling manuscripts. From developmental editing to final proofreading, we ensure your story shines.
+                  Professional ghostwriting and comprehensive editing services
+                  to transform your ideas into compelling manuscripts. From
+                  developmental editing to final proofreading, we ensure your
+                  story shines.
                 </p>
               </div>
 
@@ -405,7 +408,9 @@ export default function Home() {
                   Custom Book Cover Design
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Strategic cover designs that capture your vision and appeal to readers. Multiple concepts, unlimited revisions, and formats optimized for all platforms.
+                  Strategic cover designs that capture your vision and appeal to
+                  readers. Multiple concepts, unlimited revisions, and formats
+                  optimized for all platforms.
                 </p>
               </div>
 
@@ -429,7 +434,9 @@ export default function Home() {
                   Children's Book Illustration
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Engaging, age-appropriate illustrations for children's books. From character development to full-color artwork, bringing stories to life for young readers.
+                  Engaging, age-appropriate illustrations for children's books.
+                  From character development to full-color artwork, bringing
+                  stories to life for young readers.
                 </p>
               </div>
 
@@ -453,7 +460,9 @@ export default function Home() {
                   Professional Publishing
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Complete publishing services including formatting, ISBN registration, and copyright filing. Transform your manuscript into a market-ready book.
+                  Complete publishing services including formatting, ISBN
+                  registration, and copyright filing. Transform your manuscript
+                  into a market-ready book.
                 </p>
               </div>
 
@@ -477,7 +486,9 @@ export default function Home() {
                   Wide Distribution
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Global distribution across Amazon, Barnes & Noble, Apple Books, and more. Print-on-demand capability without inventory management.
+                  Global distribution across Amazon, Barnes & Noble, Apple
+                  Books, and more. Print-on-demand capability without inventory
+                  management.
                 </p>
               </div>
 
@@ -507,7 +518,9 @@ export default function Home() {
                   Strategic Book Marketing
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Targeted marketing strategies including social media campaigns, author websites, and book trailers. Customized promotion plans that match your goals and budget.
+                  Targeted marketing strategies including social media
+                  campaigns, author websites, and book trailers. Customized
+                  promotion plans that match your goals and budget.
                 </p>
               </div>
 
@@ -559,7 +572,10 @@ export default function Home() {
             {/* Testimonial Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                <div
+                  key={index}
+                  className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                >
                   <div className="flex text-yellow-400 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <svg
@@ -578,7 +594,9 @@ export default function Home() {
                   <div className="font-semibold text-gray-900 text-sm">
                     {testimonial.name}
                   </div>
-                  <div className="text-xs text-gray-600">{testimonial.role}</div>
+                  <div className="text-xs text-gray-600">
+                    {testimonial.role}
+                  </div>
                 </div>
               ))}
             </div>
@@ -588,7 +606,7 @@ export default function Home() {
         {/* CTA Section */}
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5">
               From First Draft to Bestseller—We're With You Every Chapter.
             </h2>
             <p className="text-sm text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6">
@@ -610,7 +628,7 @@ export default function Home() {
         <section className="py-16 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-3">
+              <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3">
                 Want to know more about Hattan Publishers?
               </h2>
             </div>
